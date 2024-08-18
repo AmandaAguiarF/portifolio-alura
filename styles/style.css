@@ -1,0 +1,163 @@
+/* Importação da fonte Krona One e Montserrat direto do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+
+
+/* O root é usado para criar definir uma variavel que se repete durante o código */
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #b76e79;
+    --cor-hover: #272727;
+
+    --fonte-principal: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+/* Para pegar todos os elementos da página colocar o "*" */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* A largura e altura dos elementos filhos sejam calculadas incluindo bordas e paddings, evitando que eles ultrapassem os limites do body (elemento pai) */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    /* Inserindo quatro valores no padding, o primeiro é o superior, o segundo é o direito, o terceiro é o inferior e o quarto é o esquerdo*/
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+
+.apresentacao {
+    padding: 5% 15%;
+    /* O flexbox é usado para organizar os elementos de uma página HTML de forma dinâmica e mantendo um layout flexível */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* O gap especifica no CSS o tamanho dos espaços entre linhas e colunas em layouts de grid, flex e multi-column */
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    /* Para transformar de px para rem divide o valor do px/16 */
+    font-size: 2.25rem;
+    font-family: var(--fonte-principal);
+    text-align: justify;
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo_texto {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    text-align: justify;
+}
+
+.apresentacao__links {
+    display: flex;
+    /* O flex=direction muda a direção dos elementos para ficar na vertical */
+    flex-direction: column;
+    /* O align-items é usado para alinhas os elementos na vertical */
+    align-items: center;
+    justify-content: space-between;
+    /* O gap é usado para criar um espaçamento de 32px entre cada elemento */
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao__links__navegacao {
+    /* background-color: #b76e79; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    margin: 5% 5%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+.apresentacao__imagem {
+    width: 50%;
+    border-radius: 16px 16px 16px 16px;
+    /* padding: 2% 0 41% 10%;
+    width: 390px;
+    height: 390px; */
+}
+
+/* O hover é usado para selecionar elementos quando você passa o mouse sobre eles */
+.apresentacao__links__link:hover {
+    background-color: var(--cor-hover);
+
+}
+
+.rodape {
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+/* O @media é usado para deixar o app responsivo para celular e tablet, o que está dentro do parenteses uma condição*/
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+
+}
