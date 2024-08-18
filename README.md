@@ -1,5 +1,3 @@
-```
-
 # Portfólio Olá, Bem vindo ao meu projeto de portfólio.
 
 ## Ferramentas utilizadas:
@@ -15,5 +13,3 @@
 ### Amanda Aguiar
 
 ### Linkedin: https://www.linkedin.com/school/aluracursos/
-
-```
