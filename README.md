@@ -1,2 +1,19 @@
-# Portifólio 
-Meu primeiro portifólio desenvolvido com os cursos de HTML e CSS da Alura.
+```
+
+# Portfólio Olá, Bem vindo ao meu projeto de portfólio.
+
+## Ferramentas utilizadas:
+
+* HTML
+
+* CSS
+
+* Flex-box
+
+## Feito por:
+
+### Amanda Aguiar
+
+### Linkedin: https://www.linkedin.com/school/aluracursos/
+
+```
