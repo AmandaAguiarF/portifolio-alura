@@ -1,4 +1,4 @@
-# Portfólio Olá, Bem vindo ao meu projeto de portfólio.
+# Olá, Bem vindo ao meu projeto de portfólio, desenvolvido a partir do curso de HTML e CSS da Alura.
 
 ## Ferramentas utilizadas:
 
@@ -8,8 +8,3 @@
 
 * Flex-box
 
-## Feito por:
-
-### Amanda Aguiar
-
-### Linkedin: https://www.linkedin.com/school/aluracursos/
